@@ -9,7 +9,7 @@ import PisslowMeter from "./pages/PisslowMeter";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/B-Bou">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
