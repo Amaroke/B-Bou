@@ -102,7 +102,190 @@ const Tips: React.FC = () => {
     },
     {
       title: "💎 Conseils généraux 💎",
-      content: <p>Contenu fictif pour la catégorie 2.</p>,
+      content: (
+        <>
+          <div className="bg-[#656874] rounded-lg p-4 mb-4">
+            <h3 className="text-lg text-[#ffeff8]">
+              📖 N'utiliser pas vos points d'apprentissage sur les armes/armures
+              📖
+            </h3>
+            <p className="text-[#ffeff8] mt-2">
+              Il est plus utile d’investir vos points d'apprentissage dans les
+              métiers de collecte. Cela vous permettra de mieux progresser à
+              long terme, car les armes et armures peuvent être obtenues plus
+              facilement sans gaspiller vos points.
+            </p>
+          </div>
+
+          <div className="bg-[#656874] rounded-lg p-4 mb-4">
+            <h3 className="text-lg text-[#ffeff8]">
+              💸 Vendre vos items avec des offres 💸
+            </h3>
+            <p className="text-[#ffeff8] mt-2">
+              Lorsque vous vendez vos objets, privilégiez les offres de vente
+              plutôt que la vente directe. Cela peut sembler peu différent, mais
+              en réalité, c’est plus rentable et vous permet de mieux contrôler
+              vos prix sur le marché.
+            </p>
+          </div>
+
+          <div className="bg-[#656874] rounded-lg p-4 mb-4">
+            <h3 className="text-lg text-[#ffeff8]">
+              👕 Tester différentes combinaisons d'armures et d'armes 👕
+            </h3>
+            <p className="text-[#ffeff8] mt-2">
+              Ne vous enfermez pas dans un set d'armure complet. Essayez
+              différentes armes et armures en fonction des sorts qui vous
+              plaisent, plutôt que de vous concentrer uniquement sur des "types
+              d'armures". La diversité peut enrichir votre expérience de jeu !
+            </p>
+          </div>
+
+          <div className="bg-[#656874] rounded-lg p-4 mb-4">
+            <h3 className="text-lg text-[#ffeff8]">
+              🤯 Ne gaspillez pas vos livres d'expérience sur des objets maxés
+              🤯
+            </h3>
+            <p className="text-[#ffeff8] mt-2">
+              N'utilisez pas vos livres d’expérience sur des équipements déjà
+              maxés (100+). Vous risquez de perdre une grande partie de
+              l’expérience. Réservez-les pour des équipements que vous voulez
+              améliorer, même si ce sont des objets de bas tiers (T4). De plus,
+              stockez-les dans votre banque pour une session XP plus tard !
+            </p>
+          </div>
+
+          <div className="bg-[#656874] rounded-lg p-4 mb-4">
+            <h3 className="text-lg text-[#ffeff8]">
+              🥗 Utiliser des outils avaloniens et de la nourriture 🥗
+            </h3>
+            <p className="text-[#ffeff8] mt-2">
+              Utilisez de la nourriture pour la collecte ou la fabrication pour
+              obtenir des bonus considérables (comme les salades pour le craft
+              ou les tourtes pour la collecte). De plus, les outils avaloniens
+              vous donnent plus de matériaux, ce qui est une excellente façon de
+              gagner de la renommée et de monter vos niveaux.
+            </p>
+          </div>
+
+          <div className="bg-[#656874] rounded-lg p-4 mb-4">
+            <h3 className="text-lg text-[#ffeff8]">🔗 Liens utiles 🔗</h3>
+            <ul className="list-inside text-[#ffeff8]">
+              <li>
+                📚 Wiki :{" "}
+                <a
+                  href="https://wiki.albiononline.com/wiki/Albion_Online_Wiki"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-700"
+                >
+                  Albion Online Wiki
+                </a>
+              </li>
+              <li>
+                🌐 Fandom :{" "}
+                <a
+                  href="https://albiononline.fandom.com/fr/wiki/Wikia_Albiononline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-700"
+                >
+                  Fandom Albion Online
+                </a>
+              </li>
+              <li>
+                🛡️ Builds :{" "}
+                <a
+                  href="https://albiononlinegrind.com/builds"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-700"
+                >
+                  Builds de personnages
+                </a>
+              </li>
+              <li>
+                📊 Stats :{" "}
+                <a
+                  href="https://albionmurder.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-700"
+                >
+                  Statistiques des joueurs
+                </a>
+              </li>
+              <li>
+                🛒 Market DB :{" "}
+                <a
+                  href="https://europe.albiononline2d.com/en/item"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-700"
+                >
+                  Base de données du marché
+                </a>
+              </li>
+              <li>
+                🔌 API :{" "}
+                <a
+                  href="https://www.albion-online-data.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-700"
+                >
+                  API Albion Online
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-[#656874] rounded-lg p-4 mb-4">
+            <h3 className="text-lg text-[#ffeff8]">
+              👨‍💻 Logiciels utilitaires 👨‍💻
+            </h3>
+            <p className="text-[#ffeff8] mt-2">
+              Pour enregistrer votre jeu et réaliser des clips, vous pouvez
+              utiliser Medal, un logiciel simple, presque open-source et gratuit
+              :{" "}
+              <a
+                href="https://medal.tv/fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:text-blue-700"
+              >
+                Medal
+              </a>
+            </p>
+            <p className="text-[#ffeff8] mt-2">
+              Et pour ceux qui veulent farmer les loots Twitch, je vous
+              conseille le Twitch Drop Miner, un outil pratique pour récolter
+              sans ouvrir un navigateur :{" "}
+              <a
+                href="https://github.com/DevilXD/TwitchDropsMiner?tab=readme-ov-file"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:text-blue-700"
+              >
+                Twitch Drops Miner
+              </a>
+            </p>
+            <p className="text-[#ffeff8] mt-2">
+              Si vous avez déjà vu un compteur de DPS ou que vous êtes
+              intéréssés pour voir vos stats comme votre fame/h ou vos dégats,
+              il existe cet add-on :{" "}
+              <a
+                href="https://github.com/Triky313/AlbionOnline-StatisticsAnalysis"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:text-blue-700"
+              >
+                Albion StatisticsAnalyzer
+              </a>
+            </p>
+          </div>
+        </>
+      ),
     },
     {
       title: "🪵 Ressources 🪵",
