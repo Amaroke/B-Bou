@@ -7,9 +7,11 @@ import JoinUs from "./pages/JoinUs";
 import Tips from "./pages/Tips";
 import PisslowMeter from "./pages/PisslowMeter";
 
+const basename = process.env.NODE_ENV === "development" ? "/" : "/B-Bou";
+
 function App() {
   return (
-    <Router basename="/B-Bou">
+    <Router basename={basename}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
