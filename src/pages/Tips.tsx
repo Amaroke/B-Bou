@@ -289,11 +289,180 @@ const Tips: React.FC = () => {
     },
     {
       title: "🪵 Ressources 🪵",
-      content: <p>Contenu fictif pour la catégorie 3.</p>,
+      content: (
+        <>
+          <div className="bg-[#656874] rounded-lg p-4 mb-4">
+            <h3 className="text-lg text-[#ffeff8]">
+              ⛏️ Répartition des ressources ⛏️
+            </h3>
+            <p className="text-[#ffeff8] mt-2">
+              La répartition des ressources dans les différentes capitales se
+              fait ainsi :
+            </p>
+            <table className="table-auto w-full mt-4 text-[#ffeff8]">
+              <thead>
+                <tr>
+                  <th className="border px-4 py-2">Capitale</th>
+                  <th className="border px-4 py-2">Ressources</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border px-4 py-2">Bridgewatch</td>
+                  <td className="border px-4 py-2">
+                    Principale : Peau, Secondaire : Fibre, Tertiaire : Minerai
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Fort Sterling</td>
+                  <td className="border px-4 py-2">
+                    Principale : Minerai, Secondaire : Pierre, Tertiaire : Fibre
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Martlock</td>
+                  <td className="border px-4 py-2">
+                    Principale : Pierre, Secondaire : Minerai, Tertiaire : Bois
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Thetford</td>
+                  <td className="border px-4 py-2">
+                    Principale : Fibre, Secondaire : Bois, Tertiaire : Peau
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Lymhurst</td>
+                  <td className="border px-4 py-2">
+                    Principale : Bois, Secondaire : Peau, Tertiaire : Pierre
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="bg-[#656874] rounded-lg p-4 mb-4">
+            <h3 className="text-lg text-[#ffeff8]">
+              🛠️ Boost de raffinage dans les cités 🛠️
+            </h3>
+            <p className="text-[#ffeff8] mt-2">
+              Le boost de raffinage dans les cités fonctionne de la manière
+              suivante :
+            </p>
+            <table className="table-auto w-full mt-4 text-[#ffeff8]">
+              <thead>
+                <tr>
+                  <th className="border px-4 py-2">Capitale</th>
+                  <th className="border px-4 py-2">Biome</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border px-4 py-2">Bridgewatch</td>
+                  <td className="border px-4 py-2">Pierres</td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Fort Sterling</td>
+                  <td className="border px-4 py-2">Bois</td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Martlock</td>
+                  <td className="border px-4 py-2">Peaux</td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Thetford</td>
+                  <td className="border px-4 py-2">Minerais</td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Lymhurst</td>
+                  <td className="border px-4 py-2">Fibre</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </>
+      ),
     },
     {
       title: "👊 PvP 👊",
-      content: <p>Contenu fictif pour la catégorie 4.</p>,
+      content: (
+        <>
+          <div className="bg-[#656874] rounded-lg p-4 mb-4">
+            <h3 className="text-lg text-[#ffeff8]">⚔️ Conseils en PvP ⚔️</h3>
+            <ul className="list-inside text-[#ffeff8] mt-2">
+              <li>
+                ✅{" "}
+                <strong>Ne prenez que du stuff que vous pouvez perdre</strong> –
+                Ne partez jamais avec quelque chose dont la perte vous ruinerait
+                !
+              </li>
+              <li>
+                ⚡ <strong>Bonne connexion & bon matériel</strong> – Le lag peut
+                vous coûter la vie en PvP, soyez préparé !
+              </li>
+              <li>
+                ⛔ <strong>Pas d’échanges en zone rouge/noire</strong> – Sinon,
+                adieu le retour rapide !
+              </li>
+              <li>
+                🐎 <strong>Utilisez une monture rapide</strong> – Cerf, cheval
+                T5 ou vivegriffe au minimum pour fuir ou poursuivre
+                efficacement.
+              </li>
+              <li>
+                👥 <strong>Restez groupé mais pas collé</strong> – Évitez les
+                AoE et facilitez vos déplacements en équipe.
+              </li>
+              <li>
+                🎯 <strong>Focus une seule cible en combat</strong> – En
+                général, éliminez le healer en premier !
+              </li>
+              <li>
+                👀 <strong>Attention aux blobs et gros groupes</strong> – Un
+                zerg peut vite vous écraser si vous ne faites pas attention.
+              </li>
+              <li>
+                ⏳ <strong>Temps d’attente après un coup</strong> – Si vous
+                attaquez un ennemi, vous ne pourrez plus fuir immédiatement !
+              </li>
+              <li>
+                🛡️ <strong>Testez différents builds</strong> – Expérimentez pour
+                trouver ce qui vous convient le mieux.
+              </li>
+              <li>
+                🎯 <strong>Connaissez votre rôle en groupe</strong> – Que vous
+                soyez tank, DPS ou healer, maîtrisez votre rôle pour une
+                meilleure synergie d'équipe.
+              </li>
+              <li>
+                🗺️ <strong>Familiarisez-vous avec les zones PvP</strong> –
+                Apprenez les particularités des zones rouges et noires pour
+                anticiper les dangers et opportunités. Apprenez également à
+                duels en corrompus ou à fuir en mists (ce ne sont que des
+                exemples).
+              </li>
+              <li>
+                🍔 <strong>Utilisez des consommables appropriés</strong> – Les
+                potions et la nourriture peuvent faire la différence en combat.
+              </li>
+              <li>
+                👁️ <strong>Restez vigilant aux embuscades</strong> – Les ennemis
+                peuvent se cacher dans les recoins, soyez toujours sur vos
+                gardes.
+              </li>
+              <li>
+                💀 <strong>Apprenez des défaites</strong> – Analysez chaque
+                combat perdu pour identifier vos erreurs et vous améliorer.
+              </li>
+              <li>
+                🥊 <strong>Soyez patient et choisissez vos combats</strong> – Il
+                vaut mieux éviter un combat perdu d'avance que de risquer un
+                équipement précieux.
+              </li>
+            </ul>
+          </div>
+        </>
+      ),
     },
     {
       title: "🌀 Routes ava 🌀",
