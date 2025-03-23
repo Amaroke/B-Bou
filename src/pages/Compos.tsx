@@ -35,11 +35,12 @@ const Compos: React.FC = () => {
       <div className="flex flex-col items-center justify-center flex-grow text-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 w-full my-8">
         <div className="space-y-4 w-full">
           {sheets.map((sheet, index) => (
-            <div key={index} className="bg-gray-200 rounded-lg p-4">
-              <div
-                className="cursor-pointer flex items-center justify-between"
-                onClick={() => toggleSheet(index)}
-              >
+            <div
+              key={index}
+              className="bg-[#ffffff] rounded-lg p-4 cursor-pointer"
+              onClick={() => toggleSheet(index)}
+            >
+              <div className=" flex items-center justify-between">
                 <h2 className="text-xl font-semibold text-black">
                   {sheet.title}
                 </h2>
@@ -48,17 +49,19 @@ const Compos: React.FC = () => {
                 </span>
               </div>
 
-              {openIndex === index && (
-                <div className="mt-4 flex justify-center items-center">
-                  <iframe
-                    src={sheet.url}
-                    width="90%"
-                    height="500"
-                    title={`Feuille ${index + 1}`}
-                    className="border-none"
-                  ></iframe>
-                </div>
-              )}
+              <div
+                className={`mt-4 flex justify-center items-center ${
+                  openIndex === index ? "block" : "hidden"
+                }`}
+              >
+                <iframe
+                  src={sheet.url}
+                  width="98%"
+                  height="500"
+                  title={`Feuille ${index + 1}`}
+                  className="border-none"
+                ></iframe>
+              </div>
             </div>
           ))}
         </div>

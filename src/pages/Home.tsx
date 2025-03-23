@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import "../petal.css";
-import { Link } from "react-router-dom";
 
 interface Petal {
   type: number;
@@ -91,12 +90,13 @@ const Home: React.FC = () => {
               </ul>
             </div>
             <div className="mb-8">
-              <Link
-                to="/compos"
+              <a
+                href="https://discord.gg/B2xuqcRM6d"
                 className="text-xl sm:text-2xl text-white font-semibold cursor-pointer"
+                target="_blank"
               >
-                ✨ Rejoins-nous ! ✨
-              </Link>
+                ✨ Alors rejoins-nous ! ✨
+              </a>
             </div>
           </div>
         </div>

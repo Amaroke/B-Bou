@@ -13,7 +13,6 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex space-x-6 items-center">
             <NavLink to="/">Accueil</NavLink>
-            <NavLink to="/join-us">Nous Rejoindre</NavLink>
             <NavLink to="/tips">Conseils</NavLink>
             <NavLink to="/compos">Compos</NavLink>
             <NavLink to="/pisslow-meter">Pisslow-meter</NavLink>
