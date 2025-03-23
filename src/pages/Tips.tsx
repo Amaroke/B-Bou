@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ipExplanation from "../assets/images/ip_explanation.png";
+import avaExplanation from "../assets/images/ava_explanation.png";
 
 const Tips: React.FC = () => {
   const [openSection, setOpenSection] = useState<number | null>(null);
@@ -466,7 +467,113 @@ const Tips: React.FC = () => {
     },
     {
       title: "🌀 Routes ava 🌀",
-      content: <p>Contenu fictif pour la catégorie 5.</p>,
+      content: (
+        <>
+          <>
+            <div className="bg-[#656874] rounded-lg p-4 mb-4">
+              <h3 className="text-lg text-[#ffeff8]">
+                🛣️ Décodage des noms des Routes d'Avalon 🛣️
+              </h3>
+              <ul className="list-inside text-[#ffeff8] mt-2">
+                <li>
+                  <strong>Noms sans tiret</strong> (ex : Eldon Hill) mènent à
+                  des maps normales.
+                </li>
+                <li>
+                  <strong>Noms avec un tiret</strong> (ex : Xasos-Aeoilos)
+                  mènent à une map avalonienne classique.
+                </li>
+                <li>
+                  <strong>Noms avec deux tirets</strong> (ex : Settun-Al-Nusis)
+                  mènent aux maps de HO.
+                </li>
+              </ul>
+              <div className="flex justify-center items-center">
+                <img
+                  className="mt-8 w-1/2"
+                  src={avaExplanation}
+                  alt="Expliquation des IPs"
+                />
+              </div>
+            </div>
+
+            <div className="bg-[#656874] rounded-lg p-4 mb-4">
+              <h3 className="text-lg text-[#ffeff8]">
+                🧭 Suffixe du 2ème mot et types de ressources 🧭
+              </h3>
+              <ul className="list-inside text-[#ffeff8] mt-2">
+                <li>
+                  <strong>Los</strong> = grande forêt verte 🌲
+                </li>
+                <li>
+                  <strong>Am</strong> = grande zone bleue 💧
+                </li>
+                <li>
+                  <strong>Un</strong> = grande zone dorée 🟡
+                </li>
+                <li>
+                  <strong>Tum</strong> = grande zone de cuir 🐾
+                </li>
+                <li>
+                  <strong>Sum</strong> = grande zone de fibres 🌿
+                </li>
+                <li>
+                  <strong>Aum</strong> = grande zone de bois 🪵
+                </li>
+                <li>
+                  <strong>Lum</strong> = grande zone de minerais ⛏️
+                </li>
+                <li>
+                  <strong>Rom</strong> = grande zone de roche 🪨
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-[#656874] rounded-lg p-4 mb-4">
+              <h3 className="text-lg text-[#ffeff8]">
+                🛡️ Décodage des Routes de HO 🛡️
+              </h3>
+              <ul className="list-inside text-[#ffeff8] mt-2">
+                <ul className="list-inside text-[#ffeff8]">
+                  <li>
+                    <strong>Qua</strong> → Niveau 4
+                  </li>
+                  <li>
+                    <strong>Qii</strong> → Niveau 5
+                  </li>
+                  <li>
+                    <strong>Sec</strong> → Niveau 6
+                  </li>
+                  <li>
+                    <strong>Set</strong> → Niveau 7
+                  </li>
+                  <li>
+                    <strong>Vyn</strong> → Horaires 21h UTC
+                  </li>
+                  <li>
+                    <strong>Ode</strong> → Horaires 18h UTC
+                  </li>
+                  <li>
+                    <strong>Qin</strong> → Horaires 15h UTC
+                  </li>
+                  <li>
+                    <strong>Duo</strong> → Horaires 12h UTC
+                  </li>
+                  <li>
+                    <strong>Vie</strong> → Horaires 05h UTC
+                  </li>
+                  <li>
+                    <strong>Ter</strong> → Horaires 03h UTC
+                  </li>
+                  <li>
+                    <strong>Nu</strong> → Horaires 00h UTC
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </>
+        </>
+      ),
     },
     {
       title: "🌟 Brumes 🌟",
