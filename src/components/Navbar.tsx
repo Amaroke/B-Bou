@@ -33,11 +33,6 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div onClick={() => setIsOpen(false)}>
-            <NavLink to="/join-us" mobile>
-              Nous Rejoindre
-            </NavLink>
-          </div>
-          <div onClick={() => setIsOpen(false)}>
             <NavLink to="/tips" mobile>
               Conseils
             </NavLink>
