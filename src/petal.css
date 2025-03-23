@@ -1,0 +1,50 @@
+.petal1 {
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    background-image: url('./assets/images/petal1.png');
+    animation: fall 10s linear infinite;
+    z-index: 100;
+}
+
+.petal2 {
+    position: absolute;
+    width: 14px;
+    height: 20px;
+    background-image: url('./assets/images/petal2.png');
+    animation: fall 10s linear infinite;
+    z-index: 100;
+}
+
+.petal3 {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background-image: url('./assets/images/petal3.png');
+    animation: fall 10s linear infinite;
+    z-index: 100;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(95dvh);
+        opacity: 0.1;
+    }
+}
+
+@keyframes fall-smartphone {
+    0% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(95dvh);
+        opacity: 0.1;
+    }
+}
