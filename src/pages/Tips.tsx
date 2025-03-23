@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import ipExplanation from "../assets/images/ip_explanation.png";
 import avaExplanation from "../assets/images/ava_explanation.png";
+import mist1 from "../assets/images/mist1.png";
+import mist2 from "../assets/images/mist2.png";
+import mist3 from "../assets/images/mist3.png";
+import mist4 from "../assets/images/mist4.png";
+import mist5 from "../assets/images/mist5.png";
 
 const Tips: React.FC = () => {
   const [openSection, setOpenSection] = useState<number | null>(null);
@@ -577,7 +582,199 @@ const Tips: React.FC = () => {
     },
     {
       title: "🌟 Brumes 🌟",
-      content: <p>Contenu fictif pour la catégorie 6.</p>,
+      content: (
+        <>
+          <>
+            <div className="bg-[#656874] rounded-lg p-4 mb-4">
+              <h3 className="text-lg text-[#ffeff8]">
+                Qu'est-ce que les Brumes ?
+              </h3>
+              <p className="text-[#ffeff8] mt-2">
+                Les Brumes sont essentiellement des zones Open World avec une
+                entrée sous forme de portail. On peut les trouver avec les
+                petites fées/petits feu follets disponibles un peu partout sur
+                la map. Elles offrent des mobs à tuer, quelques petits lacs pour
+                pêcher, des coffres aléatoires, etc. Tous les types de
+                ressources y sont disponibles.
+              </p>
+              <div className="flex justify-center items-center">
+                <img className="mt-8 w-1/3" src={mist1} alt="Mist1" />
+              </div>
+            </div>
+
+            <div className="bg-[#656874] rounded-lg p-4 mb-4">
+              <h3 className="text-lg text-[#ffeff8]">
+                Réputation de Brecilien
+              </h3>
+              <p className="text-[#ffeff8] mt-2">
+                Les Brumes ont une réputation similaire aux Factions, appelée
+                Réputation de Brecillen. Vous pouvez augmenter votre réputation
+                en accomplissant deux tâches : sauver des Wisps et nettoyer des
+                Camps. Vous pouvez vérifier votre niveau de réputation en
+                ouvrant vos Statistiques et en faisant défiler jusqu'en bas.
+                Vous commencez comme "Neutre", c'est-à-dire à 0. Vous
+                débloquerez le rang "Amical" à 50 000 points de réputation, et
+                vous débloquerez ainsi l'accès à Brecilien (via un nouveau
+                portail dans les brumes).
+              </p>
+            </div>
+
+            <div className="bg-[#656874] rounded-lg p-4 mb-4">
+              <h3 className="text-lg text-[#ffeff8]">
+                Sauvetage des feu follets
+              </h3>
+              <p className="text-[#ffeff8] mt-2">
+                Dans les Brumes, écoutez un "sifflement plaintif" pour trouver
+                des Wisps piégés. Interagissez avec le Wisp piégé pour le
+                libérer, mais cela prend du temps, il est donc généralement
+                préférable de tuer les mobs autour. Cependant, vous pouvez
+                également voler des Wisps aux autres joueurs en les sauvant
+                pendant qu'ils combattent les mobs.
+              </p>
+              <div className="flex justify-center items-center">
+                <img className="mt-8 w-1/7" src={mist2} alt="Mist2" />
+              </div>
+            </div>
+
+            <div className="bg-[#656874] rounded-lg p-4 mb-4">
+              <h3 className="text-lg text-[#ffeff8]">Nettoyage des Camps</h3>
+              <p className="text-[#ffeff8] mt-2">
+                Les camps sont des structures carrées sur la carte avec des mobs
+                qui réapparaissent constamment, comme dans les Donjons
+                Statiques. Votre objectif est de tuer suffisamment de mobs pour
+                obtenir la renommée requise : 2.7K pour les petits camps, 5K
+                pour les camps moyens et 10K pour les grands camps. D'autres
+                joueurs rivaliseront pour nettoyer les camps, alors agissez
+                rapidement, surtout en Zone Rouge et Noire. Les zones de
+                ressources/camps des brumes sont toujours sur le même pattern,
+                mais sont rotatées aléatoirement sur 360°.
+              </p>
+              <div className="flex justify-center items-center">
+                <img className="mt-8 w-1/3" src={mist3} alt="Mist3" />
+              </div>
+            </div>
+
+            <div className="bg-[#656874] rounded-lg p-4 mb-4">
+              <h3 className="text-lg text-[#ffeff8]">Rareté des Brumes</h3>
+              <p className="text-[#ffeff8] mt-2">
+                Les Brumes ont différentes raretés : Commun, Peu Commun, Rare,
+                Épique et Légendaire. La rareté influence plusieurs facteurs :
+              </p>
+              <ul className="list-inside text-[#ffeff8] mt-2">
+                <li>
+                  <strong>Tier de Ressources :</strong> Les Brumes de plus
+                  grande rareté contiennent des ressources de plus haut niveau.
+                </li>
+                <li>
+                  <strong>Tier des Ennemis :</strong> Le niveau des ennemis dans
+                  les Brumes augmente avec la rareté.
+                </li>
+                <li>
+                  <strong>Renommée Nécessaire pour les Camps :</strong> La
+                  renommée requise pour nettoyer les camps varie en fonction de
+                  la rareté des Brumes.
+                </li>
+                <li>
+                  <strong>Récompenses :</strong> Les Brumes de plus grande
+                  rareté offrent de meilleures récompenses, y compris un butin
+                  plus précieux et des gains de réputation plus élevés.
+                </li>
+              </ul>
+              <div className="flex justify-center items-center">
+                <img className="mt-8 w-1/3" src={mist4} alt="Mist4" />
+              </div>
+            </div>
+
+            <div className="bg-[#656874] rounded-lg p-4 mb-4">
+              <h3 className="text-lg text-[#ffeff8]">Abbayes des Brumes</h3>
+              <p className="text-[#ffeff8] mt-2">
+                L'Abbaye propose un nouvel environnement et une mécanique pour
+                débloquer des récompenses. Chaque salle nettoyée offre soit de
+                la richesse via un coffre, soit un buff pour aider au combat.
+                Étant dans les Brumes, vous avez un temps limité pour nettoyer
+                les salles, accumuler des richesses et vaincre les ennemis. Des
+                trésors et des coffres apparaissent pendant la durée de vie du
+                donjon, offrant des opportunités de combat. Des sorties sont
+                disponibles tout au long du donjon, vous permettant de trouver
+                des trésors et de vous échapper si vous êtes engagé par un autre
+                joueur. Quitter par une sortie vous ramène dans les Brumes, prêt
+                à reprendre l'exploration.
+              </p>
+              <p className="text-[#ffeff8] mt-2">
+                Bien que ces donjons n'aient pas de raretés, ils suivent la même
+                distribution de tiers que les autres zones des Brumes. Les zones
+                de plus haut niveau offrent des récompenses accrues pour des
+                risques plus élevés, avec plus de joueurs autorisés par tiers.
+              </p>
+              <p className="text-[#ffeff8] mt-2">
+                Joueurs Max Solo (Non Létal et Létal) :
+              </p>
+              <ul className="list-disc list-inside text-[#ffeff8] mt-2">
+                <li>T5 : 8</li>
+                <li>T6 : 8</li>
+                <li>T7 : 9</li>
+                <li>T8 : 10</li>
+              </ul>
+              <p className="text-[#ffeff8] mt-2">Joueurs Max Duo Létal :</p>
+              <ul className="list-disc list-inside text-[#ffeff8] mt-2">
+                <li>T6 - T8 : 12</li>
+              </ul>
+              <div className="flex justify-center items-center">
+                <img className="mt-8 w-1/2" src={mist5} alt="Mist5" />
+              </div>
+            </div>
+
+            <div className="bg-[#656874] rounded-lg p-4 mb-4">
+              <h3 className="text-lg text-[#ffeff8]">Plus d'infos</h3>
+              <p className="text-[#ffeff8] mt-2">
+                Dans les zones jaunes, les brumes vont du niveau 5 au niveau 7.
+                Elles sont non létales, donc vous ne pouvez pas perdre
+                d'équipement. Dans les zones rouges et noires, les brumes vont
+                du niveau 6 au niveau 8. Elles sont létales, alors soyez
+                prudents.
+              </p>
+              <p className="text-[#ffeff8] mt-2">
+                Les niveaux de rareté des brumes et leurs chances associées dans
+                les zones noires sont les suivants :
+              </p>
+              <ul className="list-inside text-[#ffeff8] mt-2">
+                <li>
+                  <strong>Communes</strong> : Niveau 6 (100%)
+                </li>
+                <li>
+                  <strong>Peu communes</strong> : Niveau 6 (66,67%), Niveau 7
+                  (33,33%)
+                </li>
+                <li>
+                  <strong>Rares</strong> : Niveau 6 (40%), Niveau 7 (53,33%),
+                  Niveau 8 (6,67%)
+                </li>
+                <li>
+                  <strong>Épiques</strong> : Niveau 7 (75%), Niveau 8 (25%)
+                </li>
+                <li>
+                  <strong>Légendaires</strong> : Niveau 8 (100%)
+                </li>
+              </ul>
+              <p className="text-[#ffeff8] mt-2">
+                Ces niveaux restent les mêmes pour les brumes non létales, mais
+                un niveau inférieur.
+              </p>
+              <p className="text-[#ffeff8] mt-2">
+                Les araignées de cristal et d'autres boss peuvent apparaître
+                comme des ennemis de niveau 5 à niveau 8 dans les brumes. Les
+                araignées de cristal sont agressives mais n'attaquent que si
+                elles sont provoquées. Elles fournissent de la puissance et des
+                faveurs à leur mort. Les araignées de cristal laissent tomber
+                des runes, des âmes, des reliques, des artefacts, des cartes de
+                donjon et des sacs d'argent. Ces boss légendaires, hors
+                l'araignée de cristal, n'apparaissent que dans des mists
+                enchantées.
+              </p>
+            </div>
+          </>
+        </>
+      ),
     },
   ];
 
