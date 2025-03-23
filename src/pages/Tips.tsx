@@ -76,7 +76,7 @@ const Tips: React.FC = () => {
             </p>
             <div className="flex justify-center items-center">
               <img
-                className="mt-8 w-1/2"
+                className="mt-4 w-full md:w-1/3 lg:w-1/4"
                 src={ipExplanation}
                 alt="Expliquation des IPs"
               />
@@ -495,7 +495,7 @@ const Tips: React.FC = () => {
               </ul>
               <div className="flex justify-center items-center">
                 <img
-                  className="mt-8 w-1/2"
+                  className="mt-4 w-full md:w-1/2 lg:w-1/2"
                   src={avaExplanation}
                   alt="Expliquation des IPs"
                 />
@@ -598,7 +598,11 @@ const Tips: React.FC = () => {
                 ressources y sont disponibles.
               </p>
               <div className="flex justify-center items-center">
-                <img className="mt-8 w-1/3" src={mist1} alt="Mist1" />
+                <img
+                  className="mt-4 w-full md:w-1/3 lg:w-1/4"
+                  src={mist1}
+                  alt="Mist1"
+                />
               </div>
             </div>
 
@@ -632,7 +636,11 @@ const Tips: React.FC = () => {
                 pendant qu'ils combattent les mobs.
               </p>
               <div className="flex justify-center items-center">
-                <img className="mt-8 w-1/7" src={mist2} alt="Mist2" />
+                <img
+                  className="mt-4 w-1/2 md:w-1/5 lg:w-1/7"
+                  src={mist2}
+                  alt="Mist2"
+                />
               </div>
             </div>
 
@@ -650,7 +658,11 @@ const Tips: React.FC = () => {
                 mais sont rotatées aléatoirement sur 360°.
               </p>
               <div className="flex justify-center items-center">
-                <img className="mt-8 w-1/3" src={mist3} alt="Mist3" />
+                <img
+                  className="mt-4 w-full md:w-1/2 lg:w-1/3"
+                  src={mist3}
+                  alt="Mist3"
+                />
               </div>
             </div>
 
@@ -681,7 +693,11 @@ const Tips: React.FC = () => {
                 </li>
               </ul>
               <div className="flex justify-center items-center">
-                <img className="mt-8 w-1/3" src={mist4} alt="Mist4" />
+                <img
+                  className="mt-4  w-full md:w-1/3 lg:w-1/3"
+                  src={mist4}
+                  alt="Mist4"
+                />
               </div>
             </div>
 
@@ -720,7 +736,11 @@ const Tips: React.FC = () => {
                 <li>T6 - T8 : 12</li>
               </ul>
               <div className="flex justify-center items-center">
-                <img className="mt-8 w-1/2" src={mist5} alt="Mist5" />
+                <img
+                  className="mt-4 w-full md:w-1/2 lg:w-1/2"
+                  src={mist5}
+                  alt="Mist5"
+                />
               </div>
             </div>
 
