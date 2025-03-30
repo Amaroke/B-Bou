@@ -8,10 +8,20 @@ import mist4 from "../assets/images/mist4.png";
 import mist5 from "../assets/images/mist5.png";
 
 const Tips: React.FC = () => {
-  const [openSection, setOpenSection] = useState<number | null>(null);
+  const [openSections, setOpenSections] = useState<number[]>([]);
 
-  const toggleSection = (index: number) => {
-    setOpenSection(openSection === index ? null : index);
+  const toggleSection = (index: number, id: string): void => {
+    setOpenSections((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+    );
+
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -80;
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
   };
 
   const categories = [
@@ -294,7 +304,7 @@ const Tips: React.FC = () => {
       ),
     },
     {
-      title: "🪵 Ressources 🪵",
+      title: "🪵 Ressources et zones liées 🪵",
       content: (
         <>
           <div className="bg-[#656874] rounded-lg p-4 mb-4">
@@ -390,7 +400,7 @@ const Tips: React.FC = () => {
       ),
     },
     {
-      title: "👊 PvP 👊",
+      title: "👊 Conseils pour le PvP 👊",
       content: (
         <>
           <div className="bg-[#656874] rounded-lg p-4 mb-4">
@@ -471,7 +481,7 @@ const Tips: React.FC = () => {
       ),
     },
     {
-      title: "🌀 Routes ava 🌀",
+      title: "🌀 Guide des routes ava 🌀",
       content: (
         <>
           <>
@@ -581,7 +591,7 @@ const Tips: React.FC = () => {
       ),
     },
     {
-      title: "🌟 Brumes 🌟",
+      title: "🌟 Guide des Brumes 🌟",
       content: (
         <>
           <>
@@ -796,6 +806,14 @@ const Tips: React.FC = () => {
         </>
       ),
     },
+    {
+      title: "🌾 Comment gather featuring séries 🌾",
+      content: <>TODO</>,
+    },
+    {
+      title: "💀 Devenir un bandit de Caerleon 💀",
+      content: <>TODO</>,
+    },
   ];
 
   return (
@@ -804,19 +822,20 @@ const Tips: React.FC = () => {
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-4 mb-2 sm:mb-4">
           📖 Voici nos divers conseils et astuces ! 💡
         </h1>
-        <h1 className="text-xl sm:text-xl md:text-xl font-bold text-white mb-6 sm:mb-8">
-          Cliquez sur les catégories qui vous intéresse pour les dérouler !
-        </h1>
+        <h2 className="text-xl sm:text-xl md:text-xl font-bold text-white mb-6 sm:mb-8">
+          Cliquez sur les catégories qui vous intéressent pour les dérouler !
+        </h2>
 
         <div className="space-y-6 w-full">
           {categories.map((category, index) => (
             <div
               key={index}
+              id={`category-${index}`}
               className="bg-[#44464e] rounded-lg p-6 cursor-pointer"
-              onClick={() => toggleSection(index)}
+              onClick={() => toggleSection(index, `category-${index}`)}
             >
               <h2 className="text-xl text-white font-bold">{category.title}</h2>
-              {openSection === index && (
+              {openSections.includes(index) && (
                 <div className="mt-4">{category.content}</div>
               )}
             </div>

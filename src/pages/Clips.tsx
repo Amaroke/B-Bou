@@ -1,6 +1,6 @@
 import React from "react";
 
-const PisslowMeter: React.FC = () => {
+const Clips: React.FC = () => {
   return (
     <section className="min-h-screen w-full flex flex-col pt-16 overflow-x-hidden text-white text-center">
       <div className="flex flex-col items-center justify-center flex-grow text-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 w-full">
@@ -12,12 +12,6 @@ const PisslowMeter: React.FC = () => {
   );
 };
 
-export default PisslowMeter;
+export default Clips;
 
 // TODO
-// Kill fame
-// Nb de kills
-// KDA
-// « Pisslow confirmé »
-// « Random »
-// « FUIR »

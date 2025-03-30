@@ -15,6 +15,7 @@ const Navbar = () => {
             <NavLink to="/">Accueil</NavLink>
             <NavLink to="/tips">Conseils</NavLink>
             <NavLink to="/compos">Compos</NavLink>
+            <NavLink to="/clips">Clips</NavLink>
             <NavLink to="/pisslow-meter">Pisslow-meter</NavLink>
           </div>
           <button
@@ -40,6 +41,11 @@ const Navbar = () => {
           <div onClick={() => setIsOpen(false)}>
             <NavLink to="/compos" mobile>
               Compos
+            </NavLink>
+          </div>
+          <div onClick={() => setIsOpen(false)}>
+            <NavLink to="/clips" mobile>
+              Clips
             </NavLink>
           </div>
           <div onClick={() => setIsOpen(false)}>
