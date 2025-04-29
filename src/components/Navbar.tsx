@@ -14,9 +14,7 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-6 items-center">
             <NavLink to="/">Accueil</NavLink>
             <NavLink to="/tips">Conseils</NavLink>
-            <NavLink to="/compos">Compos</NavLink>
-            <NavLink to="/clips">Clips</NavLink>
-            <NavLink to="/pisslow-meter">Pisslow-meter</NavLink>
+            <NavLink to="/compos">Compos & Builds</NavLink>
           </div>
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -40,17 +38,7 @@ const Navbar = () => {
           </div>
           <div onClick={() => setIsOpen(false)}>
             <NavLink to="/compos" mobile>
-              Compos
-            </NavLink>
-          </div>
-          <div onClick={() => setIsOpen(false)}>
-            <NavLink to="/clips" mobile>
-              Clips
-            </NavLink>
-          </div>
-          <div onClick={() => setIsOpen(false)}>
-            <NavLink to="/pisslow-meter" mobile>
-              Pisslow-meter
+              Compos & Builds
             </NavLink>
           </div>
         </div>

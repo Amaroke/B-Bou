@@ -71,8 +71,8 @@ const Home: React.FC = () => {
                   d'obligations pesantes, pas de CTA.
                 </li>
                 <li>
-                  <strong>Sorties en groupe :</strong> Roaming, Black zones, Red
-                  zones, gank, donjons, et plein d'autres !
+                  <strong>Sorties en groupe :</strong> Routes ava, Roaming,
+                  Black zones, Red zones, gank, donjons, et plein d'autres !
                 </li>
                 <li>
                   <strong>Guides et astuces :</strong> Conseils sur les
@@ -91,7 +91,7 @@ const Home: React.FC = () => {
             </div>
             <div className="mb-8">
               <a
-                href="https://discord.gg/B2xuqcRM6d"
+                href="https://discord.gg/hxKyAjTHjW"
                 className="text-xl sm:text-2xl text-white font-semibold cursor-pointer"
                 target="_blank"
               >
